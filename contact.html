@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact and Schedule</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <!-- header section-->
+    <header class="main-header">
+        <h1>Get In Touch</h1>
+        <p>Reach out to us via the form above or check our Schedule</p>
+    </header>
+    
+    <main class="content-container">
+        <!-- 2. Contact form section-->
+        <section class="form-section">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST" class="Contact-form">
+                <div class="form-group">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address></label>
+                    <input type="email" id="email" name="email" placeholder="Type your email" required
+                </div>
+                <div class="form-group">
+                    <label for="phone">phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="enter your phone number">
+                </div>
+            <div class="form-group">
+                <label for="subject">subject</label>
+                <select id="subject" name="subject" required
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="general">general inquiry</option>
+                    <option value="support">Technical support</option>
+                    <option value="billing">billing / Sales</option>
+                </select>
+                    
+                </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="write your message here..."required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send message</button>
+            </form>
+        </section>
+
+        <!-- 3. schedule table section-->
+        <section class="table-section">
+            <h2>Weekly Availability</h2>
+            <div class="table-wrapper">
+                <table class="schedule table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>08:00 - 05:00 PM</td>
+                            <td>Open</td>
+                        </tr>
+                        <tr>
+                            <td>Sarturday</td>
+                            <td>09:00 AM - 01:00 PM</td>
+                            <td>Limited Hours</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Closed</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
